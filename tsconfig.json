@@ -4,6 +4,7 @@
     "compileOnSave": false,
     "compilerOptions": {
         "outDir": "./dist/out-tsc",
+        "baseUrl": "./",
         "strict": true,
         "noImplicitOverride": true,
         "noPropertyAccessFromIndexSignature": true,
@@ -17,6 +18,23 @@
         "importHelpers": true,
         "target": "ES2022",
         "module": "ES2022",
+         "paths": {
+        "@services/*": [
+            "src/app/pages/service/*"
+        ],
+        "@guards/*": [
+            "src/app/pages/guards/*"
+        ],
+        "@models/*": [
+            "src/app/pages/interfaces/*"
+        ],
+        "@pipes/*": [
+            "src/app/pages/pipes/*"
+        ],
+        "@env/*": [
+            "src/environments/*"
+        ]
+        },
     },
     "angularCompilerOptions": {
         "enableI18nLegacyMessageIdFormat": false,

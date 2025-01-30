@@ -1,5 +1,5 @@
 {
-    "name": "sakai-ng",
+    "name": "pos_web_fl",
     "version": "19.0.0",
     "scripts": {
         "ng": "ng",
